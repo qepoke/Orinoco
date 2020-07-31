@@ -27,7 +27,7 @@ function displayCart() {
             `
             <div class="col-12 text-center bg-sm-none bg-dark">
                 <h1 class="text-light mt-5">Votre panier est vide !</h1>
-                <h3><a href="../html/index.html">Retour à la page d'accueil</a></h3>
+                <h3><a href="../index.html">Retour à la page d'accueil</a></h3>
             </div>
             `    
     }else if (cartItems && content){ //S'il y du contenu dans le panier on l'affiche
@@ -39,7 +39,7 @@ function displayCart() {
                     <img class="mw-100" src="${cartItem.imageURL}" alt="Image de la camera ${cartItem.name}"/>
                 </td>
                 <td>
-                    <a href="product.html?id=${cartItem.id}" class="text-light">${cartItem.name}</a>
+                    <a href="../html/product.html?id=${cartItem.id}" class="text-light">${cartItem.name}</a>
                 </td>
                 <td>
                     ${cartItem.lense}

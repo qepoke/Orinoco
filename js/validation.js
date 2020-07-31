@@ -87,5 +87,5 @@ fetch(request)
     .catch(error => {
         console.error('server response : ' + error.status);
         swal("Une erreur c'est produite, merci de recommencer ou de contacter l'administrateur", "", "error")
-        setTimeout(function(){document.location.href="../html/index.html"; }, 5000);
+        setTimeout(function(){document.location.href="../index.html"; }, 5000);
     });

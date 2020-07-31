@@ -19,7 +19,7 @@ fetch(urlApi) //Requête AJAX récupérant les éléments sur l'URL (avec promes
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <p class="text-warning">${price/100}€</p>
-                        <a href="product.html?id=${_id}" class="btn btn-secondary shadow" data-toggle="button" aria-pressed="false" autocomplete="off">Voir le produit</a>
+                        <a href="html/product.html?id=${_id}" class="btn btn-secondary shadow" data-toggle="button" aria-pressed="false" autocomplete="off">Voir le produit</a>
                     </div>
                 </div>
             </div>
