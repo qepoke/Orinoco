@@ -1,0 +1,40 @@
+#no_product {
+    _table td, table tr{
+        padding: .75rem 0.2rem !important;
+        vertical-align: center;
+        @media (max-width: 400px){
+        font-size: 0.85rem;       
+        }
+    }
+    h5, span {
+        @media (max-width: 400px){
+            font-size: 0.85rem;        
+        }
+    }
+    h5 {
+        @media (max-width: 767px){
+            text-align: center;
+            background-color: grey;
+        }
+    }
+    h2 {
+        @media (max-width: 400px){
+            font-size: 1.3rem;
+        }
+        
+    }
+}
+#class_table {
+    table td, table th {
+        padding: 0.2rem !important;
+        vertical-align: center;
+        border-top: 1px solid grey;
+    }
+}
+#quantity {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+}
+.display {
+    visibility: visible;
+}
