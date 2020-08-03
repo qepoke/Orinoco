@@ -1,10 +1,13 @@
 #no_product {
-    _table td, table tr{
+    table th{
         padding: .75rem 0.2rem !important;
         vertical-align: center;
         @media (max-width: 400px){
         font-size: 0.85rem;       
         }
+    }
+    table td{
+        padding: 0!important;
     }
     h5, span {
         @media (max-width: 400px){
@@ -20,8 +23,7 @@
     h2 {
         @media (max-width: 400px){
             font-size: 1.3rem;
-        }
-        
+        }   
     }
 }
 #class_table {
@@ -34,7 +36,4 @@
 #quantity {
     padding-left: 0.3rem !important;
     padding-right: 0.3rem !important;
-}
-.display {
-    visibility: visible;
 }

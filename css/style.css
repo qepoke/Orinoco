@@ -98,14 +98,17 @@
   height: 15px;
 }
 
-#no_product _table td, #no_product table tr {
+#no_product table th {
   padding: 0.75rem 0.2rem !important;
   vertical-align: center;
 }
 @media (max-width: 400px) {
-  #no_product _table td, #no_product table tr {
+  #no_product table th {
     font-size: 0.85rem;
   }
+}
+#no_product table td {
+  padding: 0 !important;
 }
 @media (max-width: 400px) {
   #no_product h5, #no_product span {
@@ -133,10 +136,6 @@
 #quantity {
   padding-left: 0.3rem !important;
   padding-right: 0.3rem !important;
-}
-
-.display {
-  visibility: visible;
 }
 
 header a {

@@ -35,26 +35,27 @@ function displayCart() {
         cartItems.forEach(cartItem => {   
             content.innerHTML += `
             <tr class="text-light border-top border-grey">
-                <td class="d-none d-sm-table-cell">
+                <td class="d-none d-md-table-cell">
                     <img class="mw-100" src="${cartItem.imageURL}" alt="Image de la camera ${cartItem.name}"/>
                 </td>
-                <td>
+                <td class="align-middle">
                     <a href="../html/product.html?id=${cartItem.id}" class="text-light">${cartItem.name}</a>
                 </td>
-                <td>
+                <td class="align-middle">
                     ${cartItem.lense}
                 </td>
-                <td>
+                <td class="align-middle">
                     ${cartItem.price} €
                 </td>
-                <td>
+                <td class="align-middle">
                     <span class="fas fa-minus-circle mx-1 downcrease" itemId="${cartItem.id}" itemLense="${cartItem.lense}" name="minus"></span>
                         <span>${cartItem.quantity}</span>
                     <span class="fas fa-plus-circle mx-1 upcrease" itemId="${cartItem.id}" itemLense="${cartItem.lense}" name="plus"></span>
-                <td class="d-none d-md-table-cell">
+                </td>
+                <td class="align-middle d-none d-md-table-cell">
                     ${cartItem.priceTotal} €
                 </td>
-                <td class="d-none d-sm-table-cell">
+                <td class="align-middle d-none d-sm-table-cell">
                     <span class="fas fa-trash-alt removeItem" itemId="${cartItem.id}" itemLense="${cartItem.lense}"></span>
                 </td>
             </tr>
@@ -241,7 +242,7 @@ document.getElementById("confirm_cart").addEventListener("click", () => {
         else if(!/^[0-9]+[A-zÀ-ú\-\s'.]{5,60}$/.test(address)){ //REGEX
             swal("Veuillez saisir une adresse valide", "", "error");
         }
-        else if(!/^[A-zÀ-ú\-/s'.]{2,25}$/.test(city)){  //REGEX
+        else if(!/^[A-zÀ-ú\-\s'.]{2,25}$/.test(city)){  //REGEX
             swal("Ville non reconnue, veuillez resaisir", "", "error");
         }
         else if(!/^[^\W][A-ù0-9_\-\.]{3,25}\@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$/.test(email)){ //REGEX

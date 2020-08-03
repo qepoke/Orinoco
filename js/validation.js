@@ -30,21 +30,21 @@ fetch(request)
                 <h5>Vous allez recevoir un email contenant votre facture</h5>
                 <h5 class="mt-4 text-center">Numéro de commande: </h5>
                 <h6 class="text-warning">${orderId}</h6>
-                <h3 class="mt-4">Le montant de votre commande est de : </h3> 
+                <h4 class="mt-4">Le montant de votre commande est de : </h4> 
                 <h4 class=" text-warning">${total} €</h4>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="my-3 text-center">
                 <h5 class="text-center text-light bg-dark mt-5 p-2 col-auto"> Récapitulatif de votre commande : </h5>
-                <div class="row justify-content-center my-3" id="class_table">
-                    <table class="text-center shadow-lg bg-dark col-11">
+                <div class="row m-0 justify-content-center my-3" id="class_table">
+                    <table class="text-center shadow-lg bg-dark col-11 table">
                         <thead>
                             <tr class="text-light">
-                                <th class="col-sm-2 d-none d-sm-table-cell"></th>
-                                <th class="col-sm-4 col-5">Nom</th>
-                                <th class="col-sm-4 col-5">Lentille</th>
-                                <th class="col-sm-2 col-3">Quantité</th>   
+                                <th class="col-sm-2 d-none d-sm-table-cell" style="width: 16.66%"></th>
+                                <th class="col-sm-4 col-5" style="width: 33.33%">Nom</th>
+                                <th class="col-sm-4 col-5" style="width: 33.33%">Lentille</th>
+                                <th class="col-sm-2 col-3" style="width: 16.66%">Quantité</th>   
                             </tr>
                         </thead>
                         <tbody id="table_cart">
@@ -60,16 +60,16 @@ fetch(request)
             content.innerHTML +=
                 `
                         <tr class="text-light">
-                            <td class="col-sm-2 d-none d-sm-table-cell">
+                            <td class="align-middle d-none d-sm-table-cell">
                                 <img class="mw-100 p-0" src="${cartItem.imageURL}" alt="Image de la camera ${cartItem.name}"/>
                             </td>
-                            <td>
+                            <td class="align-middle">
                                 <span>${cartItem.name}</span>
                             </td>
-                            <td>
+                            <td class="align-middle">
                                 <span>${cartItem.lense}</span>
                             </td>
-                            <td>
+                            <td class="align-middle">
                                 <span>${cartItem.quantity}</span>
                             </td>
                         </tr>  
