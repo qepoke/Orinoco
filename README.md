@@ -1,4 +1,7 @@
-# Orinoco #
+# Formation Développeur Web OPENCLASSROOMS
+
+## Orinoco
+Projet n°5 : Création d'un site e-commerce 
 
 This is the back end server for Project 5 of the Junior Web Developer path.
 
